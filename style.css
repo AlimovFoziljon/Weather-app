@@ -1,0 +1,118 @@
+@font-face {
+    font-family: Proxima;
+    src: url(./fonts/Proxima\ Nova\ Font.otf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Proxima;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(#20E4A4, #2CC9CC);
+}
+#input{
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    background: none;
+    background-color: #E4FFF9;
+    color: #00CF91;
+    font-size: 15px;
+    border-radius: 20px;
+}
+#button{
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    background: none;
+    background-color: #E4FFF9;
+    color: #00CF91;
+    font-size: 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all .3s;
+}
+#button:hover{
+    background-color: #00CF91;
+    box-shadow: 0 0 5px #00848C;
+    color: #fff;
+}
+::placeholder{
+    color: #00CF91;
+}
+.wrapper{
+    background-color: #00CF91;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: #fff;
+}
+.search-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+.weather-image{
+    width: 100px;
+}
+.results{
+    display: flex;
+    gap: 50px;
+}
+.results-statistics{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.results-wind{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.result-description{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    font-size: 25px;
+}
+.results-name h2{
+    font-size: 40px;
+}
+.results-name{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border-right: 2px solid #fff;
+    padding-right: 30px;
+}
+.results-name p{
+    font-size: 25px;
+    font-weight: 600;
+}
+@media (max-width: 650px) {
+    .results{
+        flex-direction: column;
+    }
+    .result-description{
+        gap: 30px;
+        font-size: 20px;
+    }
+    .weather-image{
+        width: 70px;
+    }
+    .results-name{
+        border-right: none;
+        padding-right: 0;
+        border-bottom: 2px solid #fff;
+        padding-bottom: 30px;
+    }
+}
